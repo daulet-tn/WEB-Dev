@@ -6,7 +6,7 @@ public class area{
 
         System.out.println(" Length ");
         int a = scanner.nextInt();
-        double b = a;
+        int b = a;
 
         System.out.println("Area " + a*a);
         System.out.println("perimeter " + a*4);

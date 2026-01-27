@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task5 {
+public class balance {
 
 	public static void main(String[] args) {
 		
