@@ -34,6 +34,7 @@ public class Time{
     public String toUniversal(){
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }
+    
 
     public void add(Time t){
         int totalSeconds = this.second + t.second;
