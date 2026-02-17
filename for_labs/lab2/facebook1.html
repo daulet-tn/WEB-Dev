@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="picture/icon.png" sizes="32x32">
+  <title>Facebook</title>
+  <style>
+    html, body{
+      margin: 0;
+    }
+    .main{
+      background-color: #F0F2F5;
+      height: 720px;
+      width: 1440px;
+      margin: 0 auto;
+    }
+    .mainface{
+      display: flex;
+      height: 100%;
+    }
+    .left{
+      width: 50%;
+    }
+    .right{
+      width: 50%;
+    }
+    .mainface img {
+      width: 321px;
+      height: 106px;
+      margin-left: 200px;
+      margin-top: 175px;
+      margin-bottom: 0;
+    }
+    .text1 {
+      font-size: 28px;
+      font-weight: 400;
+      margin-left: 225px;
+      margin-top: 0;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
+    }
+    .box{
+      background-color: rgb(255, 255, 255);
+      height: 318px;
+      width: 361px;
+      margin-top: 130px;
+      margin-left: 90px;
+      border-radius: 10px;
+      padding: 17px;
+    }
+    #input1{
+      width: 92%;
+      height: 23px;
+      margin-bottom: 12px;
+      padding: 14px;
+      font-size: 17px;
+      border-radius: 6px;
+      border: 1px solid #dddfe2;
+      color: rgb(29, 33, 41);
+    }
+    #input2{
+      width: 92%;
+      height: 23px;
+      margin-bottom: 15px;
+      padding: 14px;
+      font-size: 17px;
+      border-radius: 6px;
+      border: 1px solid #dddfe2;
+      color: rgb(29, 33, 41);
+    }
+    #button1{
+      width: 100%;
+      height: 50px;
+      padding: 14px;
+      background-color: rgb(24, 119, 242);
+      color:white ;
+      margin-bottom: 12px;
+      font-size: 20px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 700;
+
+    }
+  </style>
+</head>
+
+<body style="background: rgb(255, 255, 255);">
+  <div class="main">
+    <div class="mainface">
+      <div class="left">
+        <img  src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="write">
+      
+            <h2 class="text1">Facebook помогает вам вседа <br>
+            оставаться на сввязи и общаться со <br>
+            своими знакомыми</h2>
+      </div>
+
+      <div class="right">
+        <div class="box">
+          <input type="text" placeholder="Электронный адрес или номер телефона" id="input1">
+          <input type="text" placeholder="Пароль" id="input2">
+          <button id="button1">Вход</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
