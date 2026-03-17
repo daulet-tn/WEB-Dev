@@ -1,5 +1,5 @@
 public class Knight extends Piece {
-
+    // конь 
     public Knight(Position position) {
         super(position);
     }

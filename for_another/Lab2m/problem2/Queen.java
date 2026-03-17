@@ -1,5 +1,5 @@
 public class Queen extends Piece {
-
+    //ферзь
     public Queen(Position position) {
         super(position);
     }

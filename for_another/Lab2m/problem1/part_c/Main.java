@@ -7,7 +7,7 @@ public class Main {
         HashSet<Car> cars = new HashSet<>();
 
         Car c1 = new Car("Toyota", 2020, "Camry");
-        Car c2 = new Car("Toyota", 2020, "Camry"); // duplicate
+        Car c2 = new Car("Toyota", 2020, "Camry"); 
         Car c3 = new Car("BMW", 2022, "X5");
 
         cars.add(c1);

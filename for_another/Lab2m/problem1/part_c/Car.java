@@ -22,17 +22,21 @@ public class Car extends Vehicle {
         return super.toString() + " Model: " + model;
     }
 
+    // проверяем на совпадение 
     @Override
+    // берем обжект
     public boolean equals(Object o) {
+        //сразу проверяем
         if (this == o) return true;
         if (!(o instanceof Car)) return false;
         if (!super.equals(o)) return false;
-
+        //меняем на кар 
         Car c = (Car) o;
 
         return model.equals(c.model);
     }
 
+    // хэш чекаем
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), model);

@@ -7,11 +7,11 @@ public class Account {
         accountNumber = a;
         balance = 0.0;
     }
-
+    //пополнение 
     public void deposit(double sum) {
         balance += sum;
     }
-
+    //снятие 
     public void withdraw(double sum) {
         balance -= sum;
     }
@@ -23,7 +23,7 @@ public class Account {
     public int getAccountNumber() {
         return accountNumber;
     }
-
+    //перевод
     public void transfer(double amount, Account other) {
         withdraw(amount);
         other.deposit(amount);

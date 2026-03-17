@@ -1,5 +1,5 @@
 public class Rook extends Piece {
-
+    // ладья
     public Rook(Position position) {
         super(position);
     }

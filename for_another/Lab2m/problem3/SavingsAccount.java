@@ -1,12 +1,12 @@
 public class SavingsAccount extends Account {
 
     private double interestRate;
-
+    //депозит
     public SavingsAccount(int acc, double rate) {
         super(acc);
         interestRate = rate;
     }
-
+    //проценты 
     public void addInterest() {
 
         double interest = getBalance() * interestRate / 100;

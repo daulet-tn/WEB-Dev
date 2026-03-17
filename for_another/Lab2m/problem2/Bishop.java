@@ -1,5 +1,5 @@
 public class Bishop extends Piece {
-
+    // слон
     public Bishop(Position position) {
         super(position);
     }

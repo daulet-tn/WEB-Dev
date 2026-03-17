@@ -1,5 +1,5 @@
 public class Pawn extends Piece {
-
+    //пешка
     public Pawn(Position position) {
         super(position);
     }

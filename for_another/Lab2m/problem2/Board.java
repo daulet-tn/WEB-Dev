@@ -1,5 +1,5 @@
 public class Board {
-
+    //доска
     Piece[][] board = new Piece[8][8];
 
     public void placePiece(Piece p, int row, int col) {

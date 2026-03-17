@@ -1,5 +1,5 @@
 public abstract class Piece {
-
+    //фигура
     Position position;
 
     public Piece(Position position) {
