@@ -5,9 +5,9 @@ public class Main{
 
         Cat cat = new Cat();
 
-    Student student = new Student("Daulet");
+        Student student = new Student("Amir");
 
-    restaurant.servePizza(cat);
-    restaurant.servePizza(student);
+        restaurant.servePizza(cat);
+        restaurant.servePizza(student);
     }
 }
