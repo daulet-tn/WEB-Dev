@@ -4,8 +4,8 @@ from models import Bicycle, Car, Vehicle
 def main() -> None:
     vehicles: list[Vehicle] = [
         Vehicle("Generic", "Transporter", 2020),
-        Car("Tesla", "Model 3", 2024, doors=4, electric=True),
-        Bicycle("Trek", "FX 2", 2023, gear_count=18, has_bell=True),
+        Car("Lada", "Vesta", 2024, doors=4, electric=False),
+        Bicycle("Горный", "323", 2023, gear_count=12, has_bell=True),
     ]
 
     print("vehicle objects:")
