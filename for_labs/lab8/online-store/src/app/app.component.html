@@ -1,0 +1,29 @@
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Categories</h2>
+
+    <button
+      *ngFor="let c of categories"
+      (click)="selectCategory(c.id)"
+      [class.active]="c.id === selectedCategoryId">
+      {{ c.name }}
+    </button>
+  </aside>
+
+  <main class="content">
+  <h1>Online Store</h1>
+  <p class="sub">Каталог реальных товаров с Kaspi.kz</p>
+
+ <ng-container *ngIf="selectedCategoryId !== null; else welcome">
+  <app-product-list
+  [products]="filteredProducts"
+  (deleteProduct)="deleteProduct($event)">
+</app-product-list>
+  </ng-container>
+
+  <ng-template #welcome>
+    <p>Выберите категорию слева</p>
+  </ng-template>
+</main>
+
+</div>

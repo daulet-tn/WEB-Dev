@@ -1,8 +1,7 @@
-let name = "Даулет";
-let age = 20;
+let admin, name;
+let a = null;
 
-console.log()
-console.log("Привет, мир!");         // 1
-console.log("Меня зовут " + name);   // 2
-console.log("Мне " + age + " лет");  // 3
-console.log(typeof name);
+name = "Daulet";
+admin = name;
+alert(a)
+alert(`nsncsnfcnsnf ${name}` )
