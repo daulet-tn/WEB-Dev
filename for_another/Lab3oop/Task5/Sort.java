@@ -6,7 +6,7 @@ class Sort {
         arr[j] = temp;
     }
 
-    public static <E extends Comparable<E>> void bubbleSort(E[] arr) {
+    public static <E> void bubbleSort(E[] arr) {
         for(int i = 0; i < arr.length - 1; i++) {
             for(int j = 0; j < arr.length - i - 1; j++) {
                 if(arr[j].compareTo(arr[j+1]) > 0) {
