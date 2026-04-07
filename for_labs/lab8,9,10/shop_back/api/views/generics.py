@@ -1,12 +1,13 @@
 from rest_framework import generics
+from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-# Импортируем напрямую из приложения api
+
 from api.models import Product, Category
 from api.serializers import ProductSerializer, CategorySerializer
 
-# ---------------- Products ----------------
+# Продукты
 class ProductListAPIView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -17,7 +18,16 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ProductSerializer
     lookup_url_kwarg = 'product_id'
 
-# ---------------- Categories ----------------
+    def destroy(self, request, *args, **kwargs):
+        product = self.get_object()
+        if product.count != 0:
+            return Response(
+                {"eror": "Cannot delete"},
+                status=status.HTTP_403_FORBIDDEN   
+            )
+        return super().destroy(request, *args, **kwargs)    
+
+# Категория 
 class CategoryListAPIView(generics.ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
