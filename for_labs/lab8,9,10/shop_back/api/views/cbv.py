@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from api.models import Product, Category
 from api.serializers import ProductSerializer, CategorySerializer
 
-# Products
+# продукты
 class ProductListAPIView(APIView):
     def get(self, request):
         products = Product.objects.all()
@@ -43,7 +43,7 @@ class ProductDetailAPIView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-# Categories
+# категорий
 class CategoryListAPIView(APIView):
     def get(self, request):
         categories = Category.objects.all()
